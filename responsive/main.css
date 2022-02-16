@@ -1,0 +1,210 @@
+/* 스마트폰 세로 */
+    @media all and (min-width:320px) and (max-width:480px) {
+        /* HEADER */
+        header .logo {
+            top: 10px;
+            height: 32px;
+        }
+        header .logo img{
+            width:150px;
+        }
+        header>.inner {
+            width: 300px;
+            height: 55px;
+        }
+        header .sub-menu {
+            display: none;
+        }
+        header .main-menu {
+            display: none;
+        }
+        header .tab-menu{
+            display: block;
+            position: absolute;
+            top:15px;
+            right: 0;
+            cursor: pointer;
+        }
+        .banner {
+            display: none;
+        }
+
+        /* CONTAINER */
+        dt strong {
+            font-size: 15px;
+            line-height: 30px;
+        }
+        .more {
+            position: absolute;
+            top: 15px;
+            right: 10px;
+            cursor: pointer;
+        }
+        .more img{width: 70%;}
+        .container {
+            width: 300px;
+            padding-top: 50px;
+            margin: 0 auto;
+        }
+        .content {
+            width: 300px;
+        }
+        .about {
+            flex-wrap:wrap;
+        }
+        .about .visual {
+            width: 300px;
+            padding: 20px 10px 40px;
+            margin-bottom: 5px;
+            margin-right: 0;
+        }
+        .about .visual dt {
+            font-size: 17px;
+            padding-top: 10px;
+            line-height: 30px;
+        }
+
+        .about .visual dd {
+            font-size: 10px;
+        }
+        .about .notice {
+            display: block;
+            width: 300px;
+            padding: 10px;
+            font-size: 10px;
+            background-color: #fff;
+            position: relative;
+        }
+        .about .notice dd {
+            line-height: 23px;
+            font-size: 10px;
+        }
+        .about .notice .date {
+            position: absolute;
+            right: 15px;
+            color:#999;
+        }
+        .about .notice dd a:hover {
+            text-decoration: underline;
+        }
+        .main__more{
+            margin-top: 5px;
+        }
+        .main__more .bxArea {
+            margin-right: 0px;
+            width: 300px;
+            height: 300px;
+            padding: 0px;
+            margin-bottom: 5px;
+        }
+
+        .main__more .eventB,
+        .conference {
+            width: 125px;
+            height: 170px;
+            padding: 10px;
+            background-color: #fff;
+            position: relative;
+        }
+        .main__more .conference {
+            width:105px;
+            margin-top: 0;
+            margin-left: 10px;
+        }
+        .main__more .eventB dd {
+            padding-top: 75px;
+            line-height: 10px;
+            font-size: 13px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow:ellipsis;
+        }
+        .main__more .eventB .color {
+            width: 100%;
+            line-height: 15px;
+            font-size: 11px;
+            padding-top: 5px;
+        }
+
+        .main__more .conference {
+            margin-top: 0;
+            width: 125px;
+        }
+        .conference dd {
+            font-size: 10px;
+            font-weight: 700;
+            padding: 10px 0;
+            line-height: 15px;
+            position: relative;
+            border-bottom: 1px solid #ccc;
+        }
+        .conference dt{
+            margin-bottom: 60px;
+        }
+        .conference dd:last-child {
+            border: none;
+        }
+        .conference .more{
+            right: 0;
+        }
+        .quickMenu {
+            margin-top: 5px;
+        }
+        .quickMenu ul {
+            width: 300px;
+            margin-top: 5px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .quickMenu ul>li {
+            width: 150px;
+        }
+        .quickMenu ul>li img {
+            width:100%;
+        }
+
+        /* FOOTER */
+        footer {
+            width: 280px;
+            padding: 10px 20px;
+            background-color: #e7e6e7;
+            font-size: 10px;
+            margin:0 auto;
+            margin-top: 5px;
+        }
+        footer .inner{
+            display: none;
+        }
+        footer .inner_M{
+            display: block;
+            width:280px;
+            height: 125px;
+            margin: 0 auto;
+        }
+        footer .inner_M .footerUtil {
+            width: 280px;
+            position: static;
+        }
+        footer .footerUtil select {
+            width: 100%;
+            font-size: 10px;
+        }
+        footer .inner_M .menu li {
+            display: inline;
+            line-height: 30px;
+            font-weight: 700;
+        }
+        footer .inner_M .menu li span {
+            padding: 0 15px;
+        }
+        footer .inner_M .menu li a {
+            color: #555;
+        }
+        footer .inner_M .info {
+            width: 100%;
+            font-size: 10px;
+            color: #666;
+            float: left;
+        }
+    }
