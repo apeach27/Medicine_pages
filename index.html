@@ -4,19 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>main</title>
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../responsive/main.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./responsive/main.css">
     <!--Google Material Icons-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+
+            /* subHeader 높이 */
+            $(".gnb_M .inner").css({"height":$(window).height()});
+            
+            /* subHeader 열기 */
+            $(".gnb_M .inner").hide();
+
+            $(".tab-menu .material-icons").click(function(){
+                $(this).slideUp();
+                $(".gnb_M .inner").fadeIn("linear");
+                $(".gnbView .material-icons").show(1000);
+            });
+
+            /* subHeader 닫기 */
+            $(".gnbView .material-icons").click(function(){
+                $(".gnb_M .inner").fadeOut("linear");
+                $(this).fadeOut(500);
+                $(".tab-menu .material-icons").show(1000,"linear");
+                
+            });
+        });
+
+    </script>
 </head>
 <body>
     <!-- HEADER -->
     <header>
         <div class="inner">
-            <a href="../ex/main.psd" title="대한초음파협회" class="logo">
-                <img src="../img/header_logo.png" alt="대한초음파협회" />
-            </a>
-
+            <h1 class="logo">
+                <a href="./index.html" title="대한초음파협회">
+                    <img src="./img/header_logo.png" alt="대한초음파협회" />
+                </a>
+            </h1>
+            <div class="gnb">
+                <ul> 
+                    <li>
+                        <a href="./sub.html" title="학회소개">학회소개</a>
+                        <ul class="sub_menu">
+                            <li><span>∙ </span><a href="./sub.html" title="인사말">인사말</a></li>
+                            <li><span>∙ </span><a href="#" title="연혁">연혁</a></li>
+                            <li><span>∙ </span><a href="#" title="회칙">회칙</a></li>
+                            <li><span>∙ </span><a href="#" title="임원진 및 위원회">임원진 및 위원회</a></li>
+                            <li><span>∙ </span><a href="#" title="사무국 안내">사무국 안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" title="학회지">학회지</a>
+                        <ul class="sub_menu">
+                            <li><span>∙ </span><a href="#" title="학회지">학회지</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" title="행사일정">행사일정</a>
+                        <ul class="sub_menu">
+                            <li><span>∙ </span><a href="#" title="정기학술대회">정기학술대회</a></li>
+                            <li><span>∙ </span><a href="#" title="정기연수교육">정기연수교육</a></li>
+                            <li><span>∙ </span><a href="#" title="이사회 및 중요행사">이사회 및 중요행사</a></li>
+                            <li><span>∙ </span><a href="#" title="국제학회일정">국제학회 일정</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" title="회원공간">회원공간</a>
+                        <ul class="sub_menu">
+                            <li><span>∙ </span><a href="#" title="공지사항">공지사항</a></li>
+                            <li><span>∙ </span><a href="#" title="뉴스레터">뉴스레터</a></li>
+                            <li><span>∙ </span><a href="#" title="게시판">게시판</a></li>
+                            <li><span>∙ </span><a href="#" title="자료실">자료실</a></li>
+                            <li><span>∙ </span><a href="#" title="증례토론">증례토론</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" title="학회소개">관련사이트</a>
+                        <ul class="sub_menu">
+                            <li><span>∙ </span><a href="#" title="관련사이트">관련사이트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" title="교육자료">교육자료</a>
+                        <ul class="sub_menu">
+                            <li><span>∙ </span><a href="#" title="일반인을 위한 초음파">일반인을 위한 초음파</a></li>
+                            <li><span>∙ </span><a href="#" title="연수교육자료">연수교육자료</a></li>
+                            <li><span>∙ </span><a href="#" title="KAFE자료">KAFE자료</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
             <div class="sub-menu">
                 <ul class="menu">
                     <li><a href="javascript:void(0)" title="Home">Home</a></li>
@@ -28,14 +109,49 @@
             <div class="tab-menu">
                 <span class="material-icons">menu</span>
             </div>
-            <ul class="main-menu"> 
-                <li><a href="#" title="학회소개">학회소개</a></li>
-                <li><a href="#" title="학회지">학회지</a></li>
-                <li><a href="#" title="행사일정">행사일정</a></li>
-                <li><a href="#" title="회원공간">회원공간</a></li>
-                <li><a href="#" title="관련사이트">관련사이트</a></li>
-                <li><a href="#" title="교육자료">교육자료</a></li>
-            </ul>
+        </div>
+        <div class="gnb_M">
+            <div class="inner">
+                <div class="gnb_top">
+                    <h1>
+                        <a href="./index.html" title="대한초음파협회" class="logo">
+                            <img src="../img/header_logo.png" alt="대한초음파협회" />
+                        </a>
+                    </h1>
+                    <div class="gnbView">
+                        <a href="#" title="btn">
+                            <span class="material-icons">close</span>
+                        </a>
+                    </div>
+                    <div class="btnArea">
+                        <a href="javascript:void(0)" class="btn">로그인</a>
+                        <a href="javascript:void(0)" class="btn">회원가입</a>
+                        <a href="javascript:void(0)" class="btn">English</a>
+                    </div>
+                </div>
+                <div class="gnbContents">
+                    <ul class="gnbMob">
+                        <li>
+                            <a href="./sub.html" title="학회소개">학회소개<span class="material-icons">expand_more</span></a>
+                        </li>
+                        <li>
+                            <a href="#" title="학회지">학회지<span class="material-icons">expand_more</span></a>
+                        </li>
+                        <li>
+                            <a href="#" title="행사일정">행사일정<span class="material-icons">expand_more</span></a>
+                        </li>
+                        <li>
+                            <a href="#" title="회원공간">회원공간<span class="material-icons">expand_more</span></a>
+                        </li>
+                        <li>
+                            <a href="#" title="관련사이트">관련사이트<span class="material-icons">expand_more</span></a>
+                        </li>
+                        <li>
+                            <a href="#" title="교육자료">교육자료<span class="material-icons">expand_more</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -57,7 +173,7 @@
                 </div>
                 <div class="notice">
                     <dl>
-                        <dt><strong>공지사항</strong><span class="more"><img src="../img/btnMore.png" alt="more" /></span></dt>
+                        <dt><strong>공지사항</strong><span class="more"><img src="./img/btnMore.png" alt="more" /></span></dt>
                         <dd>
                             <span>∙ </span><a href="/" title="지원접수">대한초음파의학회 13차 인증의 신규 지원접수 …</a>
                             <span class="date">2022-01-01</span>
@@ -82,16 +198,16 @@
                 <div class="bxArea">
                     <div id="btn">
                         <p class="nextBtn">
-                            <img src="../img/event_btnNext.png" alt="다음버튼"/>
+                            <img src="./img/event_btnNext.png" alt="다음버튼"/>
                         </p>
                         <p class="prevBtn">
-                            <img src="../img/event_btnPrev.png" alt="이전버튼"/>
+                            <img src="./img/event_btnPrev.png" alt="이전버튼"/>
                         </p>
                     </div>
                 </div>
                 <div class="eventB">   
                     <dl>
-                        <dt><strong>증례토론</strong><span class="more"><img src="../img/btnMore.png" alt="more" /></span></dt>
+                        <dt><strong>증례토론</strong><span class="more"><img src="./img/btnMore.png" alt="more" /></span></dt>
                         <dd>F/9세, hematuria</dd>
                         <dd class="color">
                             화면에 보이는 것은 다음 중 어떤 artifact 일까요?<br/>
@@ -105,13 +221,13 @@
                         <dt><strong>학회지</strong></dt>
                         <dd>
                             <span>∙</span> SONOGRAPY
-                            <span class="more"><img src="../img/spon_btnNext.png" alt="nextBtn" /></span>
+                            <span class="more"><img src="./img/spon_btnNext.png" alt="nextBtn" /></span>
                         </dd>
                         <dd>
                             <span>∙</span> 
                             <span>ONLINE MANUSCRIPT</span>
                             <span>SUNMISSION<span>
-                            <span class="more"><img src="../img/spon_btnNext.png" alt="nextBtn" /></span>
+                            <span class="more"><img src="./img/spon_btnNext.png" alt="nextBtn" /></span>
                         </dd>
                     </dl>
                 </div>
@@ -119,10 +235,10 @@
             <section class="quickMenu">
                 <h2>바로가기</h2>
                 <ul>
-                    <li class="menu0"><a href="/" title="진료소개"><img src="../img/quickMenu_01.png" alt="진료소개" /></a></li>
-                    <li class="menu1"><a href="/" title="진료소개"><img src="../img/quickMenu_02.png" alt="교육홈페이지" /></a></li>
-                    <li class="menu2"><a href="/" title="진료소개"><img src="../img/quickMenu_03.png" alt="초음파인증제도" /></a></li>
-                    <li class="menu3"><a href="/" title="진료소개"><img src="../img/quickMenu_04.png" alt="KAFE" /></a></li>
+                    <li class="menu0"><a href="/" title="진료소개"><img src="./img/quickMenu_01.png" alt="진료소개" /></a></li>
+                    <li class="menu1"><a href="/" title="진료소개"><img src="./img/quickMenu_02.png" alt="교육홈페이지" /></a></li>
+                    <li class="menu2"><a href="/" title="진료소개"><img src="./img/quickMenu_03.png" alt="초음파인증제도" /></a></li>
+                    <li class="menu3"><a href="/" title="진료소개"><img src="./img/quickMenu_04.png" alt="KAFE" /></a></li>
                 </ul>
             </section>
             <section class="banner">
@@ -131,19 +247,19 @@
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="../img/banner_0.gif" alt="banner0" />
+                                <img src="./img/banner_0.gif" alt="banner0" />
                             </div>
                             <div class="swiper-slide">
-                                <img src="../img/banner_1.gif" alt="banner1" />
+                                <img src="./img/banner_1.gif" alt="banner1" />
                             </div>
                             <div class="swiper-slide">
-                                <img src="../img/banner_2.jpg" alt="banner2" />
+                                <img src="./img/banner_2.jpg" alt="banner2" />
                             </div>
                             <div class="swiper-slide">
-                                <img src="../img/banner_3.gif" alt="banner3" />
+                                <img src="./img/banner_3.gif" alt="banner3" />
                             </div>
                             <div class="swiper-slide">
-                                <img src="../img/banner_4.jpg" alt="banner4" />
+                                <img src="./img/banner_4.jpg" alt="banner4" />
                             </div>
                         </div>
                     </div>

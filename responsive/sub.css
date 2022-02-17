@@ -1,0 +1,263 @@
+/* 스마트폰 세로 */
+    @media all and (min-width:320px) and (max-width:480px) {
+        /* HEADER */
+        header{
+            position: relative;
+        }
+        header .logo {
+            top: 10px;
+            height: 32px;
+        }
+        header .logo img{
+            width:150px;
+        }
+        header>.inner {
+            width: 300px;
+            height: 55px;
+        }
+        header .sub-menu {
+            display: none;
+        }
+        header .main-menu {
+            display: none;
+        }
+        header .tab-menu{
+            display: block;
+            position: absolute;
+            top:15px;
+            right: 0;
+            cursor: pointer;
+        }
+        .banner {
+            display: none;
+        }
+
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+        .contents {
+            width: 300px;
+            padding-top: 10px;
+        }
+        .titArea h1 {
+            display: none;
+        }
+        .titArea .lnb {
+            line-height: 35px;
+            height: 35px;
+        }
+        .titArea .lnb p {
+            width: 30px;
+            text-align: center;
+            background-color: #006294;
+        }
+
+        .titArea .lnb dt,
+        .titArea .subLnb dt {
+            width: 160px;
+            /* text-align: center; */
+            border-right: 1px solid #fff;
+        }
+
+        .titArea .lnb dd,
+        .titArea .subLnb dd {
+            display: none;
+            font-size: 12px;
+            background-color: #fff;
+            outline: 1px solid #006294;
+        }
+
+        .titArea .lnb dd>ul>li,
+        .titArea .subLnb dd>ul>li {
+            border-bottom: 1px solid #eee;
+        }
+
+        .titArea .lnb dl:hover dd,
+        .titArea .subLnb dl:hover dd {
+            display: block;
+        }
+
+        .titArea .lnb li a:hover,
+        .titArea .subLnb li a:hover {
+            font-weight: 700;
+            text-decoration: underline;
+        }
+
+        .titArea .lnb dd li a,
+        .titArea .subLnb dd li a {
+            padding: 0;
+            padding-left: 10px;
+            font-size: 10px;
+        }
+
+        .titArea .lnb .about a,
+        .titArea .subLnb .about a {
+            font-size: 12px;
+        }
+
+        .titArea .lnb .about,
+        .titArea .subLnb .about {
+            padding: 0 10px;
+            width: 70px;
+        }
+
+        .titArea .lnb .about span,
+        .titArea .subLnb span {
+            width: 30%;
+            right: 0px;
+        }
+        .titArea .lnbUtil {
+            display: none;
+        }
+        .messageArea {
+            background-color: #fff;
+            padding: 5px;
+            outline: 1px solid #eee;
+        }
+        .messageArea .message {
+            border: 1px solid #eee;
+            padding: 20px 10px;
+            margin-bottom: 20px;
+            font-size: 13px;
+        }
+        .messageArea .message p {
+            font-size: 10px;
+        }
+        .messageArea .text {
+            font-size: 12px;
+            color: #555;
+        }
+        .gnb{
+            padding-top: 0;
+        }
+        .inner>.gnb{
+            display: none;
+        }
+        .gnb_M{
+            display: block;
+        }
+        .gnb_M .inner{
+            width: 300px;
+            background-color: #fff;
+            z-index: 1;
+            position: absolute;
+            top:0;
+            right: 0;
+            font-size: 14px;
+            box-shadow: 0px 3px 20px rgba(0,0,0,0.5);
+        }
+        .gnb_M .gnb_top{
+            width: 100%;
+            height: 100px;
+            background-color: #6bb4d1;
+        }
+        .gnb_M  h1{
+            width: 150px;
+            height: 40px;
+            position: absolute;
+            left:10px;
+            top:0;
+        }
+        .gnb_M .gnbView{
+            position: absolute;
+            right:10px;
+            top: 10px;
+        }
+        .btnArea{
+            width: 272px;
+            margin: 0 auto;
+            padding-top: 60px;
+            text-align: center;
+        }
+        .btn {
+            float: left;
+            width: 90px;
+            padding: 5px;
+            border: 1px solid #fff;
+            margin-left: 1px;
+            color: #fff;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 700;
+            text-align: center;
+            cursor: pointer;
+            box-sizing: border-box;
+            display: block;
+            transition: .4s;
+        }
+        .btn:hover{
+            color:#555;
+            border-color: #555;
+        }
+        .btn:first-child {
+            margin-left: 0;
+        }
+        .gnbMob{
+            display: flex;
+            flex-direction: column;
+        }
+        .gnbContents>ul>li {
+            width:240px;
+            height: 50px;
+            line-height: 50px;
+            border-bottom: 1px solid #eee;
+            text-align: left;
+            position: relative;
+            padding: 0 30px;
+        }
+        .gnbMob .material-icons{
+            color:#ccc;
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            bottom: 0;
+            transform: translatey(-50%);
+        }
+
+
+        /* FOOTER */
+        footer {
+            width: 280px;
+            padding: 10px 20px;
+            background-color: #e7e6e7;
+            font-size: 10px;
+            margin:0 auto;
+            margin-top: 5px;
+        }
+        footer .inner{
+            display: none;
+        }
+        footer .inner_M{
+            display: block;
+            width:280px;
+            height: 125px;
+            margin: 0 auto;
+        }
+        footer .inner_M .footerUtil {
+            width: 280px;
+            position: static;
+        }
+        footer .footerUtil select {
+            width: 100%;
+            font-size: 10px;
+        }
+        footer .inner_M .menu li {
+            display: inline;
+            line-height: 30px;
+            font-weight: 700;
+        }
+        footer .inner_M .menu li span {
+            padding: 0 15px;
+        }
+        footer .inner_M .menu li a {
+            color: #555;
+        }
+        footer .inner_M .info {
+            width: 100%;
+            font-size: 10px;
+            color: #666;
+            float: left;
+        }
+    }
