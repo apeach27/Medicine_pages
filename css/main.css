@@ -55,7 +55,7 @@
     width: 505px;
     height: 460px;
     padding: 20px;
-    background-color: #ccc;
+    background-color: #eee;
     position: relative;
     float: left;
 }
@@ -68,6 +68,9 @@
 }
 .main__more .bxArea .prevBtn {
     left: 5px;
+}
+.bxArea .swiper-container img{
+    width: 100%;
 }
 .main__more .eventB, .conference {
     width: 505px;

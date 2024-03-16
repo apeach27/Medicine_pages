@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>main</title>
+
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./responsive/main.css">
+    <script defer src="./main.js"></script>
+    
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+  
     <!--Google Material Icons-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script>
+    <script>
         $(document).ready(function(){
 
             /* subHeader 높이 */
@@ -115,7 +122,7 @@
                 <div class="gnb_top">
                     <h1>
                         <a href="./index.html" title="대한초음파협회" class="logo">
-                            <img src="../img/header_logo.png" alt="대한초음파협회" />
+                            <img src="./img/header_logo.png" alt="대한초음파협회" />
                         </a>
                     </h1>
                     <div class="gnbView">
@@ -196,14 +203,24 @@
             <section class="main__more">
                 <h2>더보기</h2>
                 <div class="bxArea">
-                    <div id="btn">
-                        <p class="nextBtn">
-                            <img src="./img/event_btnNext.png" alt="다음버튼"/>
-                        </p>
-                        <p class="prevBtn">
-                            <img src="./img/event_btnPrev.png" alt="이전버튼"/>
-                        </p>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="./img/banner_240114.jpg" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./img/banner_230317.jpg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+
+                    <div class="nextBtn swiper-prev">
+                        <img src="./img/event_btnNext.png" alt="다음버튼"/>
                     </div>
+                    <div class="prevBtn swiper-next">
+                        <img src="./img/event_btnPrev.png" alt="이전버튼"/>
+                    </div>
+
                 </div>
                 <div class="eventB">   
                     <dl>

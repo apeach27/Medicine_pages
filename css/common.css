@@ -63,7 +63,7 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 9;
     background-color: #fff;
     border-bottom: 1px solid #cfcfcf;
 }
@@ -183,7 +183,6 @@ header .sub-menu ul.menu .lang {
 footer {
     width: 100%;
     padding: 30px 0;
-    background-color: #e7e6e7;
 }
 
 footer .menu li {
